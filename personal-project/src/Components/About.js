@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+//import '../../resources/image.jpg';
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -111,8 +112,29 @@ const About = () => {
         </div>
 
       <div class='flex flex-row'>
-        <div class='w-1/2 border-2 border-[#3F8E9D] rounded-lg m-8'></div>
-        <div class='w-1/2 border-2 border-[#3F8E9D] rounded-lg m-8'></div>
+        <div class='w-1/2 border-2 border-[#3F8E9D] rounded-lg m-8'>
+        <div class='text-left text-gray-100 text-2xl text-bold px-5 pt-8 pb-2'>
+          AI-Powered Student Learning System
+        </div>
+        <div class='text-left text-gray-400 text-small px-5 pb-2'>Second Year Software Project</div>
+        <div class='text-left text-gray-100 px-5'>
+        Currently developing a chatbot using Retrieval-Augmented Generation (RAG) to provide intelligent
+         responses based on user queries from documents.
+        </div>
+        <div class='text-left text-gray-400 text-small p-5 pb-5'>Technologies: React JS, Material UI, Python, Llama, ChromaDB</div>
+        </div>
+
+        <div class='w-1/2 border-2 border-[#3F8E9D] rounded-lg m-8'>
+        <div class='text-left text-gray-100 text-2xl text-bold px-5 pt-8 pb-2'>
+          RAG-Based Chatbot
+        </div>
+        <div class='text-left text-gray-400 text-small px-5 pb-2'>DevLabs -  Project</div>
+        <div class='text-left text-gray-100 px-5'>
+        Currently developing a chatbot using Retrieval-Augmented Generation (RAG) to provide intelligent
+         responses based on user queries from documents.
+        </div>
+        <div class='text-left text-gray-400 text-small p-5 pb-5'>Technologies: React JS, Material UI, Python, Llama, ChromaDB</div>
+        </div>
         </div>
       </div>
       </div>
