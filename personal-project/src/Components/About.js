@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import '../../resources/image.jpg';
+import image from '../assets/image.jpg';
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ const About = () => {
         <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold pt-8'>About Me</h1>
         <div class='flex flex-row'>
           <div class="w-1/3 p-6">
-            <img src="" alt='Image'></img>
+            <img src={image} alt='Image' className="w-64"></img>
           </div>
           <div class="w-2/3 p-6 pr-6 text-justify text-gray-300">Hey! My Name is Aneesah Sabar with a deep passion to for Artificial Intelligence and Natural Language Processing. 
             I am currently a 3rd Year Undergraduate at the University of Moratuwa, Sri Lanka pursuing a degree in BSc (Hons) in Artificial Intelligence.
@@ -121,19 +121,18 @@ const About = () => {
         Currently developing a chatbot using Retrieval-Augmented Generation (RAG) to provide intelligent
          responses based on user queries from documents.
         </div>
-        <div class='text-left text-gray-400 text-small p-5 pb-5'>Technologies: React JS, Material UI, Python, Llama, ChromaDB</div>
+        <div class='text-left text-gray-400 text-small p-5 pb-8'>Technologies: React JS, Material UI, Python, Llama, ChromaDB</div>
         </div>
 
         <div class='w-1/2 border-2 border-[#3F8E9D] rounded-lg m-8'>
         <div class='text-left text-gray-100 text-2xl text-bold px-5 pt-8 pb-2'>
-          RAG-Based Chatbot
+        RIBA (Royal Institute of British Architecture) Project      
         </div>
         <div class='text-left text-gray-400 text-small px-5 pb-2'>DevLabs -  Project</div>
         <div class='text-left text-gray-100 px-5'>
-        Currently developing a chatbot using Retrieval-Augmented Generation (RAG) to provide intelligent
-         responses based on user queries from documents.
+        Worked as a member of the Business Analyst team. Documented the work process and assisted in project management of the project
         </div>
-        <div class='text-left text-gray-400 text-small p-5 pb-5'>Technologies: React JS, Material UI, Python, Llama, ChromaDB</div>
+        <div class='text-left text-gray-400 text-small p-5 pb-8'>Technologies: Jira</div>
         </div>
         </div>
       </div>

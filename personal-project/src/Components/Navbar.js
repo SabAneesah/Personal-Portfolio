@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6">
           <a href="#" className="text-gray-300 hover:text-white">About</a>
           <a href="#" className="text-gray-300 hover:text-white">Projects</a>
-          <a href="#" className="text-gray-300 hover:text-white">Blogs</a>
+          <a href="#" className="text-gray-300 hover:text-white">Technologies</a>
           <a href="#" className="text-gray-300 hover:text-white">Contact</a>
         </div>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <a href="#" className="block text-gray-300 hover:text-white px-4 py-2">About</a>
           <a href="#" className="block text-gray-300 hover:text-white px-4 py-2">Projects</a>
-          <a href="#" className="block text-gray-300 hover:text-white px-4 py-2">Blogs</a>
+          <a href="#" className="block text-gray-300 hover:text-white px-4 py-2">Technologies</a>
           <a href="#" className="block text-gray-300 hover:text-white px-4 py-2">Contact</a>
         </div>
       )}
