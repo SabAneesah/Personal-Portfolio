@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll'; // Import the Link component
-
+import logo from '../assets/portfolio-logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,9 +13,7 @@ const Navbar = () => {
     <nav className="bg-slate-900 py-4 px-12">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo or Branding */}
-        <div className="text-white text-2xl font-bold">
-          A
-        </div>
+        <img src={logo} alt="Portfolio Logo" className="w-12 h-12" />
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">

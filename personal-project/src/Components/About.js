@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import image from '../assets/image.jpg';
+import image from '../assets/image.png';
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +11,8 @@ const About = () => {
   return (
     <div className="flex justify-start flex-col m-12">
       {/*Top Section*/}
-      <div class='w-2/3'>
-      <div class='text-gray-300 text-left px-16'>Hi, My name is</div>
+      <div class='w-2/3 mb-8'>
+      <div class='text-gray-300 text-left px-16'>  Hi, My name is</div>
       <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_10%,_#8F40D8_40%)] bg-clip-text text-transparent text-left text-7xl font-bold px-16 py-4'>
              Aneesah Sabar</h1> {/* Directly use the <h1> tag */}
       <div class='text-gray-400 text-left px-16 text-3xl font-medium p-2'>“Exploring the Future of AI, NLP, and LLMs, One Innovation at a Time!"</div>
@@ -20,26 +20,53 @@ const About = () => {
       </div>
       <div class="w-1/3">
       </div>
+      <hr className="border-t-2 border-gray-800 my-8" />
+
+
       {/*About me section*/}
-      <section id="aboutme">
-        <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold pt-8'>About Me</h1>
-        <div class='flex flex-row'>
-          <div class="w-1/3 p-6">
-            <img src={image} alt='Image' className="w-64"></img>
-          </div>
-          <div class="w-2/3 p-6 pr-6 text-justify text-gray-300">Hey! My Name is Aneesah Sabar with a deep passion to for Artificial Intelligence and Natural Language Processing. 
-            I am currently a 3rd Year Undergraduate at the University of Moratuwa, Sri Lanka pursuing a degree in BSc (Hons) in Artificial Intelligence.
-             I aspire toward a career that will allow me to channel my creativity and innovation through exploring new areas to research & experiment
-              in AI.</div>
+      <section id="aboutme" >
+      <h1 className='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold pt-16'>
+            About Me
+      </h1>     
+      <div className="flex items-center pb-12">
+      <div className="flex items-center space-x-12">
+        {/* Image Section */}
+        <div className="w-1/3 flex items-center justify-center">
+          <img src={image} alt="Image" className="w-64"></img>
+        </div>
+
+        {/* Text Section */}
+        <div className="w-2/3 text-gray-400 text-justify pr-12">
+          <p>
+             I am currently a 3rd Year
+            Undergraduate at the University of Moratuwa, Sri Lanka, pursuing a
+            degree in BSc (Hons) in Artificial Intelligence. I am an Undergraduate with a deep passion for Artificial
+            Intelligence and Natural Language Processing. I aspire toward a
+            career that will allow me to channel my creativity and innovation
+            through exploring new areas to research & experiment in AI.
+          </p>
+          <br></br>
+          <p>
+            I am an individual with a solid foundation in leadership, effective communication, and problem-solving abilities. 
+            My experiences have not only strengthened my skills but have also fueled my passion for engaging in volunteer work. 
+            I find great fulfillment in participating in socially impactful projects that aim to make a difference in the community. 
+            Whether it’s collaborating with diverse teams or addressing complex challenges, I thrive on opportunities that allow me 
+            to contribute positively and support initiatives that benefit others.
+          </p>  
+        </div>
+        </div>
         </div>
       </section>
+
+      <hr className="border-t-2 border-gray-800 my-8" />
+
       {/*Education section*/}
-      <section id="education">
-      <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold py-8'>
+      <section id="education" class='pb-12'>
+      <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold py-8 pt-16'>
         Education</h1>
 
         <div class='flex flex-row'>
-          <div class='w-1/3 border-2 border-[#3F8E9D] rounded-lg m-4'>
+          <div class='w-1/3 border-2 border-[#3F8E9D] rounded-lg m-4 p-5'>
           <div class='text-right text-gray-200 p-5'>
           2020-Present
           </div>
@@ -48,10 +75,11 @@ const About = () => {
           </div>
           <div class='text-left text-gray-400 px-5 pb-8'>
           Currently a 3rd Year Undergraduate pursuing the degree BSc (Hons) in Artificial Intelligence. 
+          Building foundational skills of AI concepts and Information Technologies.
           </div>
           </div>
 
-          <div class='w-1/3 border-2 border-[#3F8E9D] rounded-lg m-4'>
+          <div class='w-1/3 border-2 border-[#3F8E9D] rounded-lg m-4 p-5'>
           <div class='text-right text-gray-200 p-5'>
           2018-2020
           </div>
@@ -64,7 +92,7 @@ const About = () => {
           </div>
           </div>
 
-          <div class='w-1/3 border-2 border-[#3F8E9D] rounded-lg m-4'>
+          <div class='w-1/3 border-2 border-[#3F8E9D] rounded-lg m-4 p-5'>
           <div class='text-right text-gray-200 p-5'>
           2007-2018
           </div>
@@ -78,10 +106,12 @@ const About = () => {
         </div>
       </div>
       </section>
+
+      <hr className="border-t-2 border-gray-800 my-8" />
       
       {/*Projects section*/}
-      <section id="projects">
-      <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold py-12'>
+      <section id="projects" class='pb-12'>
+      <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold py-12 pt-16'>
       Projects
       </h1>
       <div class='flex flex-row'>
@@ -135,6 +165,7 @@ const About = () => {
         </div>
         </div>
       </section>
+      <hr className="border-t-2 border-gray-800 my-8" />
       </div>
   );
 };
