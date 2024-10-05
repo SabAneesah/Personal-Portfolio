@@ -36,7 +36,7 @@ const Technology = () => {
   return (
 
     
-    <div>
+    <div id='techologies'>
         <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold pt-8 pb-12'>
             Technologies</h1>
 
@@ -68,7 +68,7 @@ const Technology = () => {
             <img src={figma} alt="Logo 2" className="w-20 h-20" />
         </div>
 
-        <div>
+        <div id='contactme'>
         <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_80%)] bg-clip-text text-transparent text-center text-5xl font-bold pt-8 pb-12'>
         Contact Me</h1>
 

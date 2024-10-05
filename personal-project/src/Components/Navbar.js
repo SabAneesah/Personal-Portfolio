@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll'; // Import the Link component
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +19,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="text-gray-300 hover:text-white">About</a>
-          <a href="#" className="text-gray-300 hover:text-white">Projects</a>
-          <a href="#" className="text-gray-300 hover:text-white">Technologies</a>
-          <a href="#" className="text-gray-300 hover:text-white">Contact</a>
+          <Link to="aboutme" smooth={true} duration={500} className="text-gray-300 hover:text-white">About</Link>
+          <Link to="education" smooth={true} duration={500} className="text-gray-300 hover:text-white">Education</Link>
+          <Link to="projects" smooth={true} duration={500} className="text-gray-300 hover:text-white">Projects</Link>
+          <Link to="contactme" smooth={true} duration={500} className="text-gray-300 hover:text-white">Contact</Link>
         </div>
 
         {/* Hamburger Menu Icon (visible on small screens) */}
@@ -36,10 +38,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
-          <a href="#" className="block text-gray-300 hover:text-white px-4 py-2">About</a>
-          <a href="#" className="block text-gray-300 hover:text-white px-4 py-2">Projects</a>
-          <a href="#" className="block text-gray-300 hover:text-white px-4 py-2">Technologies</a>
-          <a href="#" className="block text-gray-300 hover:text-white px-4 py-2">Contact</a>
+          <Link to="aboutme" smooth={true} duration={500} className="block text-gray-300 hover:text-white px-4 py-2">About</Link>
+          <Link to="education" smooth={true} duration={500} className="block text-gray-300 hover:text-white px-4 py-2">Education</Link>
+          <Link to="projects" smooth={true} duration={500} className="block text-gray-300 hover:text-white px-4 py-2">Projects</Link>
+          <Link to="contactme" smooth={true} duration={500} className="block text-gray-300 hover:text-white px-4 py-2">Contact</Link>
         </div>
       )}
     </nav>

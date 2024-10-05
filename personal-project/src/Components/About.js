@@ -21,7 +21,7 @@ const About = () => {
       <div class="w-1/3">
       </div>
       {/*About me section*/}
-      <div>
+      <section id="aboutme">
         <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold pt-8'>About Me</h1>
         <div class='flex flex-row'>
           <div class="w-1/3 p-6">
@@ -32,10 +32,9 @@ const About = () => {
              I aspire toward a career that will allow me to channel my creativity and innovation through exploring new areas to research & experiment
               in AI.</div>
         </div>
-      </div>
-
+      </section>
       {/*Education section*/}
-      <div classname="education">
+      <section id="education">
       <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold py-8'>
         Education</h1>
 
@@ -78,10 +77,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      </div>
+      </section>
       
       {/*Projects section*/}
-      <div classname="projects">
+      <section id="projects">
       <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold py-12'>
       Projects
       </h1>
@@ -135,7 +134,7 @@ const About = () => {
         <div class='text-left text-gray-400 text-small p-5 pb-8'>Technologies: Jira</div>
         </div>
         </div>
-      </div>
+      </section>
       </div>
   );
 };
