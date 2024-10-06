@@ -6,7 +6,6 @@ import Technology from './Components/Technology.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShuttleSpace } from '@fortawesome/free-solid-svg-icons';
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -36,7 +35,6 @@ function App() {
   }, []);
 
   return (
-
     <div class='bg-slate-900 min-h-screen'>
       <div className="App">
       <Navbar />
@@ -55,7 +53,6 @@ function App() {
     </button>
       </div>
     </div>
-    
   );
 }
 
