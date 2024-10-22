@@ -17,10 +17,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <Link to="aboutme" smooth={true} duration={500} className="text-gray-300 hover:text-white">About</Link>
-          <Link to="education" smooth={true} duration={500} className="text-gray-300 hover:text-white">Education</Link>
-          <Link to="projects" smooth={true} duration={500} className="text-gray-300 hover:text-white">Projects</Link>
-          <Link to="contactme" smooth={true} duration={500} className="text-gray-300 hover:text-white">Contact</Link>
+          <Link to="aboutme" smooth={true} duration={500} className="text-gray-300 hover:text-white text-sm md:text-base lg:text-lg">About</Link>
+          <Link to="education" smooth={true} duration={500} className="text-gray-300 hover:text-white text-sm md:text-base lg:text-lg">Education</Link>
+          <Link to="projects" smooth={true} duration={500} className="text-gray-300 hover:text-white text-sm md:text-base lg:text-lg">Projects</Link>
+          <Link to="contactme" smooth={true} duration={500} className="text-gray-300 hover:text-white text-sm md:text-base lg:text-lg">Contact</Link>
         </div>
 
         {/* Hamburger Menu Icon (visible on small screens) */}

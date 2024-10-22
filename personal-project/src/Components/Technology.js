@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import clang from '../assets/c-programming.png';
 import html from '../assets/html-5.png';
 import css3 from '../assets/css3.png';
@@ -38,42 +39,42 @@ const Technology = () => {
   return (
 
     
-    <div id='techologies' class='pb-12'>
-      <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold pt-8 pb-12'>
-         Technologies
-      </h1>
+    <div id='technologies' class='pb-12'>
+    <h1 class='bg-[linear-gradient(90deg,_#3F8E9D_30%,_#8F40D8_60%)] bg-clip-text text-transparent text-center text-5xl font-bold pt-8 pb-12'>
+        Technologies
+    </h1>
 
-      <div className="flex justify-center items-center space-x-8">
-            <img src={html} alt="HTML Logo" className="w-20 h-20" />
-            <img src={css3} alt="CSS Logo" className="w-20 h-20" />
-            <img src={javascript} alt="Javascript Logo" className="w-20 h-20" />
-            <img src={python} alt="Python Logo" className="w-20 h-20" />
-            <img src={clang} alt="C Logo" className="w-20 h-20" />
-            <img src={java} alt="Java Logo" className="w-20 h-20" />
-      </div>
+    <div className="flex flex-wrap justify-center items-center space-x-8">
+        <img src={html} alt="HTML Logo" className="w-20 h-20 m-2" />
+        <img src={css3} alt="CSS Logo" className="w-20 h-20 m-2" />
+        <img src={javascript} alt="Javascript Logo" className="w-20 h-20 m-2" />
+        <img src={python} alt="Python Logo" className="w-20 h-20 m-2" />
+        <img src={clang} alt="C Logo" className="w-20 h-20 m-2" />
+        <img src={java} alt="Java Logo" className="w-20 h-20 m-2" />
+    </div>
 
-      <div className="flex justify-center items-center space-x-8">
-            <img src={react} alt="React Logo" className="w-20 h-20" />
-            <img src={tailwindcss} alt="Tailwind css Logo" className="w-20 h-20" />
-            <img src={materialui} alt="material ui Logo" className="w-20 h-20" />
-            <img src={nodejs} alt="nodeJS Logo" className="w-20 h-20" />
-      </div>
+    <div className="flex flex-wrap justify-center items-center space-x-8">
+        <img src={react} alt="React Logo" className="w-20 h-20 m-2" />
+        <img src={tailwindcss} alt="Tailwind CSS Logo" className="w-20 h-20 m-2" />
+        <img src={materialui} alt="Material UI Logo" className="w-20 h-20 m-2" />
+        <img src={nodejs} alt="NodeJS Logo" className="w-20 h-20 m-2" />
+    </div>
 
-      <div className="flex justify-center items-center space-x-8">
-            <img src={mongodb} alt="MongoDB Logo" className="w-20 h-20" />
-            <img src={mysql} alt="MySQL Logo" className="w-20 h-20" />
-            <img src={chromadb} alt="ChromaDB Logo" className="w-20 h-15" />
-      </div>
+    <div className="flex flex-wrap justify-center items-center space-x-8">
+        <img src={mongodb} alt="MongoDB Logo" className="w-20 h-20 m-2" />
+        <img src={mysql} alt="MySQL Logo" className="w-20 h-20 m-2" />
+        <img src={chromadb} alt="ChromaDB Logo" className="w-20 h-15 m-2" />
+    </div>
 
-      <div className="flex justify-center items-center space-x-8 pb-12">
-            <img src={jupyter} alt="Jupyter Logo" className="w-20 h-20" />
-            <img src={tensorflow} alt="Tensorflow Logo" className="w-20 h-20" />
-            <img src={numpy} alt="Numpy Logo" className="w-20 h-20" />
-            <img src={pandas} alt="Pandas Logo" className="w-20 h-20" />
-            <img src={keras} alt="Keras Logo" className="w-16 h-16" />
-            <img src={scikit} alt="Scikit-learn Logo" className="w-20 h-20" />
-            <img src={figma} alt="Figma Logo" className="w-20 h-20" />
-      </div>
+    <div className="flex flex-wrap justify-center items-center space-x-8 pb-12">
+        <img src={jupyter} alt="Jupyter Logo" className="w-20 h-20 m-2" />
+        <img src={tensorflow} alt="TensorFlow Logo" className="w-20 h-20 m-2" />
+        <img src={numpy} alt="NumPy Logo" className="w-20 h-20 m-2" />
+        <img src={pandas} alt="Pandas Logo" className="w-20 h-20 m-2" />
+        <img src={keras} alt="Keras Logo" className="w-16 h-16 m-2" />
+        <img src={scikit} alt="Scikit-learn Logo" className="w-20 h-20 m-2" />
+        <img src={figma} alt="Figma Logo" className="w-20 h-20 m-2" />
+    </div>
 
       <hr className="border-t-2 border-gray-800 my-8 pt-8" />
 
